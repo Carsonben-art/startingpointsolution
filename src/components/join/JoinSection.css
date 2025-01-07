@@ -1,0 +1,97 @@
+
+  /* Section Container */
+  .donation-section {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #fff;
+  }
+  
+  /* Button: Join the Movement */
+  .join-btn {
+    background-color: #ff9ae7;
+    color: #5c0032;
+    border: none;
+    border-radius: 25px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  
+  /* Section Heading */
+  .section-heading {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #111827;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+  
+  .highlight-text {
+    color: #5c0032;
+  }
+  
+  /* Donation Button */
+  .donation-btn {
+    background-color: #5c0032;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  
+  .donation-btn:hover {
+    background-color: #930658;
+  }
+  
+  /* Illustrations Container */
+  .illustrations {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
+  
+  .illustration {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-heading {
+      font-size: 1.5rem;
+    }
+  
+    .donation-btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .illustrations {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .illustration {
+      max-width: 80px;
+    }
+  }
+  

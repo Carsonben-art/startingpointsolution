@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+body {
+  margin: 0;
+  font-family: "Alef";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

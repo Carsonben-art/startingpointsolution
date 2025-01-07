@@ -1,0 +1,119 @@
+.vision-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+  
+  .vision-content {
+    padding-right: 2rem;
+  }
+  
+  .vision-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #f0f7ff;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    color: #0066ff;
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .vision-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .vision-subtitle {
+    display: block;
+    color: #f9099f;
+    margin-top: 0.5rem;
+  }
+  
+  .vision-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #4a4a4a;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-button {
+    background-color: #b30169;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: #930658;
+  }
+  
+  .vision-media {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vision-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .vision-title {
+      font-size: 2.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .vision-container {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  
+    .vision-content {
+      padding-right: 0;
+    }
+  
+    .vision-title {
+      font-size: 2.2rem;
+    }
+  
+    .vision-media {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vision-section {
+      padding: 2rem 1rem;
+    }
+  
+    .vision-title {
+      font-size: 1.8rem;
+    }
+  
+    .vision-media {
+      height: 300px;
+    }
+  }
