@@ -44,6 +44,7 @@
   opacity: 0;
   transform: translateY(-30px);
   animation: slideUp 0.8s forwards 0.5s;
+  z-index: 1;
 }
 
 .hero-title {
