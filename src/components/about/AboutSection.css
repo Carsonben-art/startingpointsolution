@@ -1,160 +1,133 @@
 .about-section {
-    padding: 4rem 2rem;
-    background-color: #ffffff;
-  }
-  
-  .section-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .tag {
-    background-color: #fff0f9;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    color: #95064c;
-    font-size: 0.9rem;
-  }
-  
-  .title {
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    margin-top: 1rem;
-  }
-  
-  .highlight {
-    color: #f9099f;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .card {
-    border-radius: 15px;
-    overflow: hidden;
-    height: 300px;
-    /* change here */
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-    will-change: transform, opacity;
-  }
-  .card.in-view {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  .text-card {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition-delay: 0.2s;
-  }
-  
-  .text-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .text-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  .image-card {
-    height: 300px;
-    transition-delay: 0.3s;
-  }
-  .image-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  /* Paralax begin here */
-  /* Background parallax effect */
-.blue-bg, .yellow-bg, .center-card {
-    background-attachment: fixed;
-    transition: background-position 0.3s ease;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  /* Add hover effects */
-  .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  
-  /* Optional: Add stagger effect for cards */
-  .grid-container .card:nth-child(2) {
-    transition-delay: 0.1s;
-  }
-  
-  .grid-container .card:nth-child(3) {
-    transition-delay: 0.2s;
-  }
-  /*smooth animations */
-@media (prefers-reduced-motion: reduce) {
-    .card {
-      transition: none;
-      transform: none;
-    }
-  }
-  /* Paralax ends here */
-  
-  .blue-bg {
-    background-color: #f0f8ff;
-    color: #333;
-    background-image: url('../../assets//bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    background-blend-mode: multiply;
-  }
-  
-  .yellow-bg {
-    background-color: #fff8e6;
-    color: #333;
-    background-image: url('../../assets//bg3.svg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    background-blend-mode: multiply;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+}
 
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.tag {
+  background-color: #fff0f9;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  color: #95064c;
+  font-size: 0.9rem;
+}
+
+.title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-top: 1rem;
+}
+
+.highlight {
+  color: #f9099f;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  height: 300px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax Hover Effect */
+.parallax:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Bounce Hover on Images */
+.bounce img {
+  transition: transform 0.3s ease;
+}
+
+.bounce:hover img {
+  transform: scale(1.05);
+}
+
+/* Text Card Styling */
+.text-card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.text-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Image Card Styling */
+.image-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Background Effects */
+.blue-bg {
+  background-color: #f0f8ff;
+  background-image: url('../../assets/bg.svg');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.yellow-bg {
+  background-color: #fff8e6;
+  background-image: url('../../assets/bg3.svg');
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.center-card {
+  background-color: #0066cc;
+  color: white;
+  background-image: url('../../assets/bg4.svg');
+  background-size: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .center-card {
-    background-color: #0066cc;
-    color: white;
-    background-image: url('../../assets//bg4.svg');
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position: center;
-    background-blend-mode: multiply;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .grid-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+
+  .card {
+    height: auto;
+    min-height: 250px;
   }
-  
-  @media (max-width: 768px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-    }
-  
-    .card {
-      height: auto;
-      min-height: 250px;
-    }
-  
-    .about-section {
-      padding: 2rem 1rem;
-    }
+
+  .about-section {
+    padding: 2rem 1rem;
   }
+}

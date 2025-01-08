@@ -1,5 +1,5 @@
 import './ImpactSection.css'
-const ImpactSection = () => {
+const ImpactSection = ({id}) => {
     const impactData = [
       {
         number: "1000+",
@@ -22,7 +22,7 @@ const ImpactSection = () => {
     ];
   
     return (
-      <section className="impact-section">
+      <section className="impact-section" id={id}>
         <div className="impact-header">
           <span className="impact-label">Impact</span>
           <h2 className="impact-title">

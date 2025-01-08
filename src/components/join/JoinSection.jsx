@@ -13,7 +13,7 @@ const JoinSection = () => {
         <span>Stand Up, Speak Out,</span> <br />
         <span className="highlight-text">Need some assistance?</span>
       </h1>
-      <button className="donation-btn">Call us Now</button>
+      <a href="tel:+254795123678"><button className="donation-btn">Call us Now</button></a>
       <div className="illustrations">
         <div className="illustration">
           <img src={child} alt="Pencil Icon" />

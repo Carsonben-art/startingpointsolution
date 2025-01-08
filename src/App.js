@@ -8,19 +8,25 @@ import ImpactSection from './components/impact/ImpactSection'
 import Video from './components/videosection/Video'
 import VisionSection from './components/vision/VisionSection'
 import Gallery from './components/gallery/Gallery'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
+import Navbar from './components/nav/Nav'
 
 const App = () => {
   return (
     <div>
-      <Hero />
+      <Navbar />
+      <Hero id="home"/>
       <VideoSection />
-      <AboutSection />
-      <ServicesSection />
+      <AboutSection id="about"/>
+      <ServicesSection id="services"/>
       <JoinSection />
-      <ImpactSection />
+      <ImpactSection id="impact"/>
       <Video />
       <VisionSection />
-      <Gallery />
+      <Gallery id="gallery"/>
+      <Contact id="contact"/>
+      <Footer />
     </div>
   )
 }

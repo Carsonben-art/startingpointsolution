@@ -86,12 +86,14 @@
     }
   
     .illustrations {
-      flex-direction: column;
+      flex-direction: row;
+      gap: 1rem;
       align-items: center;
     }
   
     .illustration {
-      max-width: 80px;
+      max-width: 100px;
+      height: 100px;
     }
   }
   

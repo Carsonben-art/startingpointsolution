@@ -48,18 +48,6 @@
     overflow: hidden;
   }
     
-  /* Background Pattern */
-  /* .impact-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, transparent 70%);
-    transform: translate(50%, -50%);
-    opacity: 0.6;
-  } */
   .impact-card:hover {
     transform: translateY(-5px);
   }

@@ -7,7 +7,7 @@ import parenting from '../../assets/parenting.png'
 import healthcare from '../../assets/healthcare.png'
 import training from '../../assets/training.png'
 import charity from '../../assets/charity.png'
-const ServicesSection = () => {
+const ServicesSection = ({id}) => {
   const services = [
     {
       title: "Provide Educational Support",
@@ -38,7 +38,7 @@ const ServicesSection = () => {
       image: healthcare,  
     },
     {
-      title: "Facilitate Vocational Training",
+      title: "Facilitate Training",
       description: "We offer skills training and job placement assistance to help teenage mothers become financially independent.",
       pattern: "dots",
       color: "#E8F1FF",
@@ -55,7 +55,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="services-section">
+    <section className="services-section" id={id}>
         <span className="tag">Our Services</span>
       <h2>Here's How Together We</h2>
       <h1>Make a Difference</h1>

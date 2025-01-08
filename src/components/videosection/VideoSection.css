@@ -29,6 +29,9 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .video-section{
+        height: 50vh;
+    }
     .video-container {
         width: 90%; 
         height: 60vh; 
@@ -36,6 +39,9 @@
 }
 
 @media (max-width: 480px) {
+    .video-section{
+        height: 50vh;
+    }
     .video-container {
         width: 95%;
         height: auto; 
